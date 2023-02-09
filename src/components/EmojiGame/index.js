@@ -2,6 +2,7 @@ import {Component} from 'react'
 import EmojiCard from '../EmojiCard/index'
 import GameResult from '../WinOrLoseCard/index'
 import NavItem from '../NavBar/index'
+import './index.css'
 
 /* 
 Quick Tip 
@@ -54,7 +55,7 @@ class EmojiGame extends Component {
       !win || score === 12 ? (
         <GameResult win={win} score={score} play={this.play} />
       ) : (
-        <ul>
+        <ul className="emoji-container">
           {suffled.map(each => (
             <EmojiCard onEmoji={this.onEmoji} details={each} key={each.id} />
           ))}
@@ -64,7 +65,7 @@ class EmojiGame extends Component {
     return (
       <div>
         <NavItem win={win} score={score} bestScore={bestScore} />
-        <div>{result}</div>
+        <div className="main">{result}</div>
       </div>
     )
   }

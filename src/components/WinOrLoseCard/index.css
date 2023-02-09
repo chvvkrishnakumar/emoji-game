@@ -1,1 +1,21 @@
 /* Write your code here. */
+.win-lose {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  color: rgb(105, 15, 15);
+}
+.score {
+  color: blue;
+  font-weight: bold;
+}
+.btn {
+  height: fit-content;
+  width: fit-content;
+  color: blue;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+}
